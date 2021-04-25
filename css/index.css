@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap');
+
+/*************************************Desktop css*********************************/
+
+/*navbar css start here*/
+.logo img {
+	width: 20rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 5%;
+  background-color: #24252abd;
+}
+.logo {
+  cursor: pointer;
+}
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+.nav__links li {
+  padding: 0px 20px;
+}
+.nav__links li a {
+  transition: color 0.3s ease 0s;
+}
+.nav__links li a:hover {
+  color: #ffbc44;
+}
+.cta {
+    padding: 9px 25px;
+    background-color: #ffbc44;
+    color: #000000;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+}
+.cta:hover {
+  	background-color: #000000;
+    color: #ffbc44;
+}
+.menu {
+  display: none;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #000000d6;
+  overflow-x: hidden;
+  transition: width 0.5s ease 0s;
+}
+.overlay--active {
+  width: 100%;
+}
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  color: #ffbc44;
+  transition: color 0.3s ease 0s;
+}
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}
+/*navbar css ends here*/
+
+/*trailer section css start*/
+.fullscreen-bg {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    z-index: -100;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.fullscreen-bg__video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+/*trailer section css ends*/
+
+/*About section css starts here*/
+.about {
+	padding: 2% 5%;
+	background-color: #0000003d;
+}
+	/*GAME MODE IMAGES*/
+	.game_modes{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 3% 0;
+	}
+	.gm_mode_1{ 
+		background-image: url("https://cdn.wallpapersafari.com/14/85/87Y96c.jpg");
+		background-position: center;
+		background-size: cover;
+		filter: blur(1.4px);
+	}
+	.gm_mode_2{ 
+		background-image: url("https://wallpapercave.com/wp/wp4415176.jpg");
+		background-position: center;
+		background-size: cover;
+		filter: blur(1.4px); 
+	}
+	.gm_mode_3{ 
+		background-image: url("https://c4.wallpaperflare.com/wallpaper/209/251/804/cod-mw-ghost-call-of-duty-hd-wallpaper-preview.jpg"); 
+		background-position: center;
+		background-size: cover;
+		filter: blur(1.4px);
+	}
+	.gm_mode{
+		width: 57vh;
+		height: 35vh;
+	}
+	.game_modes li p{
+		position: relative;
+		bottom: 50%;
+		text-align: center;
+		font-size: 1.3rem;
+		font-weight: 500;
+		text-shadow: 0px 3px 2px #1a1a1a;
+	}
+	/*GALLERY*/
+	#gallery{
+		padding: 3% 5%;
+		background-color: #000000b5;
+	}
+	.owl-theme .owl-dots {
+  		text-align: right;
+	}
+/*About section css ends here*/
+
+/*Support us css starts here*/
+#support-us{
+	padding: 2% 5%;
+	background-image: linear-gradient(90deg, rgba(15,7,0,1) 26%, rgba(15,7,0,0.8463760504201681) 53%, rgba(0,0,0,0.5438550420168067) 78%, rgba(0,212,255,0) 100%), url("https://image.freepik.com/free-vector/online-gaming-illustration_188398-120.jpg");
+	background-size: cover;
+	background-position: center;
+}
+#support-us img{
+	margin: 0 5%;
+}
+#donate_btn{
+	padding: 1% 3%;
+	margin: 0 5%;
+    border-radius: 35px;
+    background-color: #ff9600;
+    color: white;
+    outline: none;
+    font-size: 1.5rem;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+#donate_btn:hover{
+	background-color: #251600;
+	color: #ff9600;
+}
+.support-us-data{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+/*Support us css ends here*/
+
+/*contact us css start here*/
+#contact-us{
+	padding: 5% 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #0000003d;
+}
+.contact-box{
+	display: flex;
+    justify-content: center;
+}
+.left_side_box{
+	background-color: #ff9600;
+	padding: 7% 10%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.left_side_box h3{
+	font-size: 3rem;
+	font-weight: 700;
+}
+.right_side_box{
+	background-color: black;
+	padding: 10%;
+}
+.contact-form{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.contact-form input{
+	width: 20rem;
+    background: none;
+    border: none;
+    border-bottom-color: white;
+    border-bottom: ridge;
+    border-width: thin;
+    font-family: 'MONTSERRAT';
+    padding: 2% 0%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+}
+.fa-facebook,.fa-twitter,.fa-youtube,.fa-instagram{
+	color: white;
+	font-size: 1.8rem;
+    margin: 0 2%;
+    transition-duration: 0.2s;
+}
+.fa-facebook:hover,.fa-twitter:hover,.fa-youtube:hover,.fa-instagram:hover{
+	color: black;
+}
+#sendbtn{
+	padding: 2% 8%;
+	margin: 10% 0 0 0;
+    width: fit-content;
+    border-radius: 35px;
+    background-color: #ff9600;
+    color: white;
+    outline: none;
+    font-size: 1rem;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+#sendbtn:hover{
+	background-color: #251600;
+	color: #ff9600;
+}
+/*************************************Tab css*********************************/
+@media only screen and (min-width:768px) and (max-width:1024px) {
+	/*navbar css start here*/
+	.logo img {
+		width: 15rem;
+	}
+	/*navbar css ends here*/
+
+	/*game mode css starts here*/
+	.gm_mode {
+	    width: 40vh;
+	    height: 18vh;
+	}
+	.game_modes {
+		justify-content: center;
+	}
+	.game_modes li p {
+    	font-size: 0.8rem;
+	}
+	.game_modes li{
+		margin: 1%;
+	}
+	/*game mode css ends here*/
+
+	/*Support us css starts here*/
+	.support-us-data{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#donate_btn{
+		padding: 1% 3%;
+	    border-radius: 35px;
+	    font-size: 1.5rem;
+	}
+	#support-us img, #donate_btn{
+		margin: 3% 5%;
+	}
+	/*Support us css ends here*/
+
+	/*contact us css starts here*/
+	.contact-box {
+	    flex-direction: column;
+	}
+	.socialHandle{
+		display: flex;
+		align-content: center;
+    	margin-top: 2%;
+	}
+	.contact-form input {
+    	width: 30rem;
+	}
+	/*contact us css ends here*/
+}
+
+/*************************************Mobile css*********************************/
+@media only screen and (max-width:767px) {
+	/*navbar css start here*/
+	.logo img {
+		width: 10rem;
+	}
+	.cta {
+	    padding: 5px 10px;
+	    font-size: 0.7rem;
+	}
+	/*navbar css ends here*/
+
+	/*game mode css starts here*/
+	.gm_mode {
+	    width: 50vh;
+   		height: 20vh;
+	}
+	.game_modes {
+		justify-content: center;
+	}
+	.game_modes li p {
+    	font-size: 0.8rem;
+	}
+	.game_modes li{
+		margin: 1%;
+	}
+	/*game mode css ends here*/
+
+	/*Support us css starts here*/
+	.support-us-data{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#donate_btn{
+		padding: 1% 3%;
+	    border-radius: 25px;
+	    font-size: 0.8rem;
+	}
+	#support-us img{
+		width: 80%;
+	}
+	#support-us img, #donate_btn{
+	margin: 4% 4%;
+	}
+	/*Support us css ends here*/
+
+	/*contact us css starts here*/
+	.contact-box {
+	    flex-direction: column;
+	}
+	.socialHandle{
+		display: flex;
+		align-content: center;
+    	margin-top: 2%;
+	}
+	.contact-form input {
+    	width: 14rem;
+	}
+	.left_side_box h3 {
+    	font-size: 2rem;
+	}
+	.fa-facebook, .fa-twitter, .fa-youtube, .fa-instagram {
+    	font-size: 1.2rem;
+	}
+	#sendbtn {
+    	font-size: 0.8rem;
+	}
+	/*contact us css ends here*/
+}
