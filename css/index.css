@@ -11,7 +11,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 2px 5%;
-  background-color: #24252abd;
+  background-color: #000000;
 }
 .logo {
   cursor: pointer;
@@ -21,7 +21,7 @@ header {
 .overlay__content a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  color: #edf0f1;
+  color: white;
   text-decoration: none;
 }
 .nav__links {
@@ -35,12 +35,12 @@ header {
   transition: color 0.3s ease 0s;
 }
 .nav__links li a:hover {
-  color: #ffbc44;
+  color: #c50000;
 }
 .cta {
-    padding: 9px 25px;
-    background-color: #ffbc44;
-    color: #000000;
+    padding: 5px 24px;
+    background-color: #c50000;
+    color: white;
     font-size: 1rem;
     border: none;
     border-radius: 50px;
@@ -49,7 +49,7 @@ header {
 }
 .cta:hover {
   	background-color: #000000;
-    color: #ffbc44;
+    color: #c50000;
 }
 .menu {
   display: none;
@@ -79,7 +79,7 @@ header {
   padding: 15px;
   font-size: 36px;
   display: block;
-  color: #ffbc44;
+  color: white;
   transition: color 0.3s ease 0s;
 }
 .overlay a:hover,
@@ -127,6 +127,9 @@ header {
     margin-top: auto;
     margin-bottom: auto;
 }
+.fullscreen-bg img{
+	width: 100%;
+}
 
 .fullscreen-bg__video {
     position: relative;
@@ -148,35 +151,8 @@ header {
 		justify-content: space-between;
 		padding: 3% 0;
 	}
-	.gm_mode_1{ 
-		background-image: url("https://cdn.wallpapersafari.com/14/85/87Y96c.jpg");
-		background-position: center;
-		background-size: cover;
-		filter: blur(1.4px);
-	}
-	.gm_mode_2{ 
-		background-image: url("https://wallpapercave.com/wp/wp4415176.jpg");
-		background-position: center;
-		background-size: cover;
-		filter: blur(1.4px); 
-	}
-	.gm_mode_3{ 
-		background-image: url("https://c4.wallpaperflare.com/wallpaper/209/251/804/cod-mw-ghost-call-of-duty-hd-wallpaper-preview.jpg"); 
-		background-position: center;
-		background-size: cover;
-		filter: blur(1.4px);
-	}
-	.gm_mode{
-		width: 57vh;
-		height: 35vh;
-	}
-	.game_modes li p{
-		position: relative;
-		bottom: 50%;
-		text-align: center;
-		font-size: 1.3rem;
-		font-weight: 500;
-		text-shadow: 0px 3px 2px #1a1a1a;
+	.game_modes img{
+		width: 30%;
 	}
 	/*GALLERY*/
 	#gallery{
@@ -202,19 +178,19 @@ header {
 	padding: 1% 3%;
 	margin: 0 5%;
     border-radius: 35px;
-    background-color: #ff9600;
-    color: white;
+    background-color: black;
+	color: white;
     outline: none;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     border: none;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     cursor: pointer;
     transition-duration: 0.2s;
 }
 #donate_btn:hover{
-	background-color: #251600;
-	color: #ff9600;
+	background-color: #141414;
+    color: #f90000;
 }
 .support-us-data{
 	display: flex;
@@ -238,7 +214,7 @@ header {
     justify-content: center;
 }
 .left_side_box{
-	background-color: #ff9600;
+	background-color: #c50000;
 	padding: 7% 10%;
 	display: flex;
 	flex-wrap: wrap;
@@ -260,6 +236,7 @@ header {
 }
 .contact-form input{
 	width: 20rem;
+	color: white;
     background: none;
     border: none;
     border-bottom-color: white;
@@ -285,7 +262,7 @@ header {
 	margin: 10% 0 0 0;
     width: fit-content;
     border-radius: 35px;
-    background-color: #ff9600;
+    background-color: #c50000;
     color: white;
     outline: none;
     font-size: 1rem;
@@ -296,30 +273,21 @@ header {
     transition-duration: 0.2s;
 }
 #sendbtn:hover{
-	background-color: #251600;
-	color: #ff9600;
+	background-color: #250000;
+	color: #c50000;
 }
 /*************************************Tab css*********************************/
 @media only screen and (min-width:768px) and (max-width:1024px) {
 	/*navbar css start here*/
 	.logo img {
-		width: 15rem;
+		width: 10rem;
+    	padding: 3% 0;
 	}
 	/*navbar css ends here*/
 
 	/*game mode css starts here*/
-	.gm_mode {
-	    width: 40vh;
-	    height: 18vh;
-	}
-	.game_modes {
-		justify-content: center;
-	}
-	.game_modes li p {
-    	font-size: 0.8rem;
-	}
-	.game_modes li{
-		margin: 1%;
+	.game_modes img{
+		width: 30%;
 	}
 	/*game mode css ends here*/
 
@@ -330,7 +298,7 @@ header {
 		align-items: center;
 	}
 	#donate_btn{
-		padding: 1% 3%;
+		padding: 2% 6%;
 	    border-radius: 35px;
 	    font-size: 1.5rem;
 	}
@@ -358,27 +326,22 @@ header {
 @media only screen and (max-width:767px) {
 	/*navbar css start here*/
 	.logo img {
-		width: 10rem;
+		width: 6rem;
+		padding: 2% 0;
 	}
 	.cta {
-	    padding: 5px 10px;
+	    padding: 2px 12px;
 	    font-size: 0.7rem;
 	}
 	/*navbar css ends here*/
 
 	/*game mode css starts here*/
-	.gm_mode {
-	    width: 50vh;
-   		height: 20vh;
-	}
 	.game_modes {
-		justify-content: center;
+		flex-direction: column;
 	}
-	.game_modes li p {
-    	font-size: 0.8rem;
-	}
-	.game_modes li{
-		margin: 1%;
+	.game_modes img{
+		width: 100%;
+		padding: 3% 0;
 	}
 	/*game mode css ends here*/
 
@@ -389,9 +352,9 @@ header {
 		align-items: center;
 	}
 	#donate_btn{
-		padding: 1% 3%;
+		padding: 2% 5%;
 	    border-radius: 25px;
-	    font-size: 0.8rem;
+	    font-size: 0.7rem;
 	}
 	#support-us img{
 		width: 80%;

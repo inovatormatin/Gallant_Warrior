@@ -22,14 +22,14 @@ html {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #fea01f; 
+  background: #c50000; 
   border-radius: 10px;
 }
 body {
 	color: white;
 	font-family: 'Montserrat', sans-serif;
 	background: url("../images/background.jpg");
-	background-size: cover;
+	background-size: contain;
 }
 h1 {
 	font-size: 4rem;
@@ -58,7 +58,7 @@ a {
 	text-decoration: none;
 }
 #footerHR{
-	background-color: #ff9600;
+	background-color: #c50000;
 	height: 0.4rem;
     border: none;
 }
