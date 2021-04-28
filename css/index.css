@@ -4,14 +4,15 @@
 
 /*navbar css start here*/
 .logo img {
-	width: 20rem;
+	width: 12rem;
+	padding : 4% 0;
 }
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2px 5%;
-  background-color: #000000;
+  background-color: #161616fc;
 }
 .logo {
   cursor: pointer;
@@ -84,7 +85,7 @@ header {
 }
 .overlay a:hover,
 .overlay a:focus {
-  color: #0088a9;
+  color: #c50000;
 }
 .overlay .close {
   position: absolute;
@@ -161,6 +162,9 @@ header {
 	}
 	.owl-theme .owl-dots {
   		text-align: right;
+	}
+	.owl-carousel {
+	    z-index: 0;
 	}
 /*About section css ends here*/
 
@@ -280,8 +284,8 @@ header {
 @media only screen and (min-width:768px) and (max-width:1024px) {
 	/*navbar css start here*/
 	.logo img {
-		width: 10rem;
-    	padding: 3% 0;
+		width: 8rem;
+    	padding: 4% 0;
 	}
 	/*navbar css ends here*/
 
@@ -327,7 +331,7 @@ header {
 	/*navbar css start here*/
 	.logo img {
 		width: 6rem;
-		padding: 2% 0;
+		padding: 4% 0;
 	}
 	.cta {
 	    padding: 2px 12px;

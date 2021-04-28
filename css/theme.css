@@ -28,8 +28,9 @@ html {
 body {
 	color: white;
 	font-family: 'Montserrat', sans-serif;
-	background: url("../images/background.jpg");
-	background-size: contain;
+	/*background: url("../images/background.jpg");*/
+	/*background-size: contain;*/
+	background-color: #161616fc;
 }
 h1 {
 	font-size: 4rem;
