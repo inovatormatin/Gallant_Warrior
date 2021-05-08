@@ -468,7 +468,8 @@ header {
 		width: 80%;
 	}
 	#support-us img, #donate_btn{
-	margin: 4% 4%;
+		margin: 4% 4%;
+		width: 80%;
 	}
 	/*Support us css ends here*/
 
