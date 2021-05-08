@@ -205,6 +205,112 @@ header {
 }
 /*Support us css ends here*/
 
+<<<<<<< HEAD
+/*perk cards css start here*/
+#perks{
+	margin: 2rem 0;
+}
+#perks_section{
+	display: none;
+}
+.perk_card img{
+	width: 100%;
+	border-radius: 0.4rem;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+.perk_text{
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+.paynowbtn{
+	grid-row-start: 3;
+	grid-row-end: 4;	
+}
+.perk_hr{
+	width: 50%;
+	margin: 0.4rem auto;
+}
+.perk_card{
+	background-color: #35323b;
+	width: 20%;
+	margin: 0.4rem;
+	color: white;
+	border-radius: 0.4rem;
+	padding: 1rem;
+	text-align: center;
+	display: grid;
+	grid-auto-rows: 45% 45% 10%;
+}
+.perk_card strong{
+	font-size: 1.5rem;
+	margin: 0.2rem 0;
+}
+.perk_card p{
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+#perks{
+	display: flex;
+}
+@media only screen and (min-width:768px) and (max-width:1094px) {
+	#perks{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.perk_card{
+		width: 48%;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 80% 25%;
+	}
+	.perk_card img{
+		width: 80%;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		grid-column-start: 1;
+		grid-column-end: 2;
+	}
+	.perk_text{
+		grid-row-start: 1;
+		grid-row-end: 2;
+		grid-column-start: 2;
+		grid-column-end: 3;
+	}
+	.paynowbtn{
+		grid-row-start: 2;
+		grid-row-end: 3;
+		grid-column-start: 2;
+		grid-column-end: 3;	
+	}
+}
+@media only screen and (max-width:767px) {
+	#perks{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.perk_card{
+		width: 100%;
+		grid-auto-rows: 45% 45% 10%;
+	}
+	.perk_card img{
+		width: 90%;
+		height: 100%;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+	.perk_text{
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+	.paynowbtn{
+		grid-row-start: 3;
+		grid-row-end: 4;	
+	}
+}
+/*perk card css ends here/
+
+=======
+>>>>>>> parent of 453b6c0 (adding vedio and perk cards)
 /*contact us css start here*/
 #contact-us{
 	padding: 5% 10%;
