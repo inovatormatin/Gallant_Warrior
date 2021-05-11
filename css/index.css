@@ -293,8 +293,8 @@ header {
 		grid-auto-rows: 45% 45% 10%;
 	}
 	.perk_card img{
-		width: 90%;
-		height: 100%;
+		width: 80%;
+		height: 80%;
 		grid-row-start: 1;
 		grid-row-end: 2;
 	}
@@ -468,8 +468,8 @@ header {
 		width: 80%;
 	}
 	#support-us img, #donate_btn{
-		margin: 4% 4%;
-		width: 80%;
+		margin: 4% auto;
+		width: 60%;
 	}
 	/*Support us css ends here*/
 
