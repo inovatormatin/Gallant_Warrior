@@ -187,7 +187,7 @@ header {
     outline: none;
     font-size: 1.4rem;
     border: none;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     cursor: pointer;
     transition-duration: 0.2s;
@@ -350,7 +350,7 @@ header {
     border-bottom-color: white;
     border-bottom: ridge;
     border-width: thin;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 2% 0%;
     font-size: 1rem;
     margin-bottom: 1rem;
@@ -375,7 +375,7 @@ header {
     outline: none;
     font-size: 1rem;
     border: none;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     cursor: pointer;
     transition-duration: 0.2s;

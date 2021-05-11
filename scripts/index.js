@@ -8,4 +8,5 @@ function on_off_perk() {
     perks_section.style.display = "none";
   }
 }
+perks_section.style.display = "none";
 donate_btn.addEventListener("click", on_off_perk);
